@@ -1,0 +1,107 @@
+Classfile /Users/daochengzhang/JavaCode/01jvm/src/work1/hello.class
+  Last modified 2022-4-26; size 606 bytes
+  MD5 checksum 0f0303d7229a7f7dba6da5108ad65bc2
+  Compiled from "hello.java"
+public class work1.hello
+  minor version: 0
+  major version: 52      --jdk8
+  flags: ACC_PUBLIC, ACC_SUPER
+Constant pool:
+   #1 = Methodref          #5.#23         // java/lang/Object."<init>":()V
+   #2 = Fieldref           #24.#25        // java/lang/System.out:Ljava/io/PrintStream;
+   #3 = Methodref          #26.#27        // java/io/PrintStream.println:(I)V
+   #4 = Class              #28            // work1/hello
+   #5 = Class              #29            // java/lang/Object
+   #6 = Utf8               <init>
+   #7 = Utf8               ()V
+   #8 = Utf8               Code
+   #9 = Utf8               LineNumberTable
+  #10 = Utf8               LocalVariableTable
+  #11 = Utf8               this
+  #12 = Utf8               Lwork1/hello;
+  #13 = Utf8               main
+  #14 = Utf8               ([Ljava/lang/String;)V
+  #15 = Utf8               i
+  #16 = Utf8               I
+  #17 = Utf8               args
+  #18 = Utf8               [Ljava/lang/String;
+  #19 = Utf8               a
+  #20 = Utf8               StackMapTable
+  #21 = Utf8               SourceFile
+  #22 = Utf8               hello.java
+  #23 = NameAndType        #6:#7          // "<init>":()V
+  #24 = Class              #30            // java/lang/System
+  #25 = NameAndType        #31:#32        // out:Ljava/io/PrintStream;
+  #26 = Class              #33            // java/io/PrintStream
+  #27 = NameAndType        #34:#35        // println:(I)V
+  #28 = Utf8               work1/hello
+  #29 = Utf8               java/lang/Object
+  #30 = Utf8               java/lang/System
+  #31 = Utf8               out
+  #32 = Utf8               Ljava/io/PrintStream;
+  #33 = Utf8               java/io/PrintStream
+  #34 = Utf8               println
+  #35 = Utf8               (I)V
+{
+  public work1.hello();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 3: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Lwork1/hello;
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=3, args_size=1
+         0: iconst_0
+         1: istore_1
+         2: iconst_0
+         3: istore_2
+         4: iload_2
+         5: bipush        10
+         7: if_icmpge     26
+        10: iload_2
+        11: iconst_2
+        12: irem
+        13: ifeq          20
+        16: iload_1
+        17: iload_2
+        18: iadd
+        19: istore_1
+        20: iinc          2, 1
+        23: goto          4
+        26: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        29: iload_1
+        30: invokevirtual #3                  // Method java/io/PrintStream.println:(I)V
+        33: return
+      LineNumberTable:
+        line 5: 0
+        line 6: 2
+        line 7: 10
+        line 8: 16
+        line 6: 20
+        line 11: 26
+        line 12: 33
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            4      22     2     i   I
+            0      34     0  args   [Ljava/lang/String;
+            2      32     1     a   I
+      StackMapTable: number_of_entries = 3
+        frame_type = 253 /* append */
+          offset_delta = 4
+          locals = [ int, int ]
+        frame_type = 15 /* same */
+        frame_type = 250 /* chop */
+          offset_delta = 5
+}
+SourceFile: "hello.java"
