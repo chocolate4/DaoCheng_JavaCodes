@@ -1,6 +1,8 @@
 package work2;
 
-import java.io.*;
+import java.io.Closeable;
+import java.io.IOException;
+import java.io.InputStream;
 import java.lang.reflect.Method;
 
 public class ClassLoaderForXlass extends ClassLoader{
@@ -18,18 +20,16 @@ public class ClassLoaderForXlass extends ClassLoader{
 
     @Override
     protected Class<?> findClass(String name) throws ClassNotFoundException {
+        InputStream inputStream = this.getClass().getClassLoader().getResourceAsStream("Hello.xlass");
         try {
-            FileInputStream inputStream = new FileInputStream("/Users/daochengzhang/JavaCode/01jvm/src/work2/resources/Hello.xlass");
             byte[] bArray = new byte[inputStream.available()];
-            System.out.println(bArray.length);
             inputStream.read(bArray);
-//            return defineClass("hh",bArray,0,bArray.length);
             byte[] decodeBytes = decode(bArray);
-            System.out.println(decodeBytes.length);
-            inputStream.close();
-            return defineClass(null,decodeBytes,0,decodeBytes.length);
+            return defineClass(name,decodeBytes,0,decodeBytes.length);
         } catch (IOException e) {
             throw new ClassNotFoundException(name,e);
+        }finally {
+            close(inputStream);
         }
     }
 
