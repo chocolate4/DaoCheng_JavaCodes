@@ -26,6 +26,7 @@
       <change afterPath="$PROJECT_DIR$/src/nio/work06/mvnw" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/nio/work06/mvnw.cmd" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/nio/work06/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/nio/work06/src/main/java/com/daocheng/work06/HttpClientDemo.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/nio/work06/src/main/java/com/daocheng/work06/HttpServer01.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/nio/work06/src/main/java/com/daocheng/work06/HttpServer02.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/nio/work06/src/main/java/com/daocheng/work06/HttpServer03.java" afterDir="false" />
