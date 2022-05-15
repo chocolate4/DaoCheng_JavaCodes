@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f2391397-876e-49de-8ec6-58b16c89abbb" name="Changes" comment="work02">
+      <change afterPath="$PROJECT_DIR$/../01jvm/.idea/artifacts/jvm_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01jvm/src/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01jvm/src/work2/h.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01jvm/src/work2/resources/h.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01jvm/src/work2/test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/02JVM+NIO.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/nio/HttpServer01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/nio/HttpServer02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/nio/HttpServer03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/nio/work06/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/nio/work06/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/nio/work06/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/nio/work06/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/nio/work06/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/nio/work06/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/nio/work06/src/main/java/com/daocheng/work06/HttpServer01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/nio/work06/src/main/java/com/daocheng/work06/HttpServer02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/nio/work06/src/main/java/com/daocheng/work06/HttpServer03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/nio/work06/src/main/java/com/daocheng/work06/main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/nio/work06/src/main/java/com/daocheng/work06/netty/NettyHttpServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/nio/work06/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/nio/work06/src/test/java/com/daocheng/work06/Work06ApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/other/gateway-server-0.0.1-SNAPSHOT.jar" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="28s2IRwhNhSpN1HnrFaJcGiW3lm" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.customizations" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/other" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/nio" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Work06Application">
+    <configuration name="HttpServer01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="nio.HttpServer01" />
+      <module name="02JVM+NIO" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="nio.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Work06Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="work06.src.main.java.com.daocheng.work06.Work06Application" />
+      <module name="02JVM+NIO" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="work06.src.main.java.com.daocheng.work06.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Work06Application" />
+        <item itemvalue="Application.HttpServer01" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f2391397-876e-49de-8ec6-58b16c89abbb" name="Changes" comment="" />
+      <created>1651990894121</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1651990894121</updated>
+    </task>
+    <task id="LOCAL-00001" summary="work01">
+      <created>1651991665765</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1651991665765</updated>
+    </task>
+    <task id="LOCAL-00002" summary="work04">
+      <created>1652261283265</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1652261283265</updated>
+    </task>
+    <task id="LOCAL-00003" summary="work02">
+      <created>1652344993555</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1652344993555</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="work01" />
+    <MESSAGE value="work04" />
+    <MESSAGE value="work02" />
+    <option name="LAST_COMMIT_MESSAGE" value="work02" />
+  </component>
+</project>
