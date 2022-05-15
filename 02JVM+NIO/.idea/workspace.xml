@@ -1,40 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f2391397-876e-49de-8ec6-58b16c89abbb" name="Changes" comment="work02">
-      <change afterPath="$PROJECT_DIR$/../01jvm/.idea/artifacts/jvm_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../01jvm/src/META-INF/MANIFEST.MF" afterDir="false" />
+    <list default="true" id="f2391397-876e-49de-8ec6-58b16c89abbb" name="Changes" comment="work06">
       <change afterPath="$PROJECT_DIR$/../01jvm/src/work2/h.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../01jvm/src/work2/resources/h.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../01jvm/src/work2/test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02JVM+NIO.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/nio/HttpServer01.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/nio/HttpServer02.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/nio/HttpServer03.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/nio/work06/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/nio/work06/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/nio/work06/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/nio/work06/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/nio/work06/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/nio/work06/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/nio/work06/src/main/java/com/daocheng/work06/HttpClientDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/nio/work06/src/main/java/com/daocheng/work06/HttpServer01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/nio/work06/src/main/java/com/daocheng/work06/HttpServer02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/nio/work06/src/main/java/com/daocheng/work06/HttpServer03.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/nio/work06/src/main/java/com/daocheng/work06/main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/nio/work06/src/main/java/com/daocheng/work06/netty/HttpHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/nio/work06/src/main/java/com/daocheng/work06/netty/HttpInitializer.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/nio/work06/src/main/java/com/daocheng/work06/netty/NettyHttpServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/nio/work06/src/main/resources/application.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/nio/work06/src/test/java/com/daocheng/work06/Work06ApplicationTests.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/other/gateway-server-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jvm/work01/CMSGC/cms(1g).log" beforeDir="false" afterPath="$PROJECT_DIR$/src/jvm-work04/work01/CMSGC/cms(1g).log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jvm/work01/G1GC/detail.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/jvm-work04/work01/G1GC/detail.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jvm/work01/G1GC/g1(1g).log" beforeDir="false" afterPath="$PROJECT_DIR$/src/jvm-work04/work01/G1GC/g1(1g).log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jvm/work01/G1GC/g1(4g).log" beforeDir="false" afterPath="$PROJECT_DIR$/src/jvm-work04/work01/G1GC/g1(4g).log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jvm/work01/parallelGC/parallel(1g).log" beforeDir="false" afterPath="$PROJECT_DIR$/src/jvm-work04/work01/parallelGC/parallel(1g).log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jvm/work01/parallelGC/parallel(256m).log" beforeDir="false" afterPath="$PROJECT_DIR$/src/jvm-work04/work01/parallelGC/parallel(256m).log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jvm/work01/parallelGC/parallel(2g).log" beforeDir="false" afterPath="$PROJECT_DIR$/src/jvm-work04/work01/parallelGC/parallel(2g).log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jvm/work01/parallelGC/parallel(4g).log" beforeDir="false" afterPath="$PROJECT_DIR$/src/jvm-work04/work01/parallelGC/parallel(4g).log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jvm/work01/parallelGC/parallel(default).log" beforeDir="false" afterPath="$PROJECT_DIR$/src/jvm-work04/work01/parallelGC/parallel(default).log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jvm/work01/serialGC/serial(1g).log" beforeDir="false" afterPath="$PROJECT_DIR$/src/jvm-work04/work01/serialGC/serial(1g).log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jvm/work01/serialGC/serial(512m).log" beforeDir="false" afterPath="$PROJECT_DIR$/src/jvm-work04/work01/serialGC/serial(512m).log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jvm/work02/stressTesting.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/jvm-work04/work02/stressTesting.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jvm/work04/analysis.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/jvm-work04/work04/analysis.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +137,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652344993555</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="work06">
+      <created>1652592524441</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1652592524441</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -165,6 +164,7 @@
     <MESSAGE value="work01" />
     <MESSAGE value="work04" />
     <MESSAGE value="work02" />
-    <option name="LAST_COMMIT_MESSAGE" value="work02" />
+    <MESSAGE value="work06" />
+    <option name="LAST_COMMIT_MESSAGE" value="work06" />
   </component>
 </project>
