@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f2391397-876e-49de-8ec6-58b16c89abbb" name="Changes" comment="work06">
-      <change afterPath="$PROJECT_DIR$/../01jvm/src/work2/h.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../01jvm/src/work2/resources/h.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../01jvm/src/work2/test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/nio/HttpServer01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/nio/HttpServer02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/nio/HttpServer03.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/nio/work06/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/nio/work06/src/main/java/com/daocheng/work06/netty/HttpHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/nio/work06/src/main/java/com/daocheng/work06/netty/HttpInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/nio/work06/src/main/java/com/daocheng/work06/netty/NettyHttpServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/nio/work06/src/test/java/com/daocheng/work06/Work06ApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/other/gateway-server-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="f2391397-876e-49de-8ec6-58b16c89abbb" name="Changes" comment="work06" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -139,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652592839568</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="work06">
+      <created>1652593808635</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1652593808635</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

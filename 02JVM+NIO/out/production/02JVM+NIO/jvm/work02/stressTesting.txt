@@ -1,0 +1,116 @@
+串行GC：
+测试：wrk  -c 40 -d30s http://localhost:8088
+512m:
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    27.73ms   97.37ms   1.04s    95.33%
+    Req/Sec     9.22k     4.80k   20.84k    74.12%
+  524434 requests in 30.10s, 130.13MB read
+  Non-2xx or 3xx responses: 524434
+Requests/sec:  17423.92
+Transfer/sec:      4.32MB
+
+2g:
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    40.47ms  160.70ms   1.53s    95.76%
+    Req/Sec    12.98k     7.34k   23.92k    61.76%
+  720658 requests in 30.07s, 178.82MB read
+  Non-2xx or 3xx responses: 720658
+Requests/sec:  23963.29
+Transfer/sec:      5.95MB
+
+4g:
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    38.37ms  148.13ms   1.41s    95.36%
+    Req/Sec    12.90k     7.39k   23.57k    66.96%
+  720316 requests in 30.10s, 178.74MB read
+  Non-2xx or 3xx responses: 720316
+Requests/sec:  23934.02
+Transfer/sec:      5.94MB
+
+并行GC：
+测试：wrk  -c 40 -d30s http://localhost:8088
+512m:
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    31.48ms  112.42ms   1.07s    94.70%
+    Req/Sec    12.30k     6.00k   19.05k    77.40%
+  678426 requests in 30.07s, 168.34MB read
+  Non-2xx or 3xx responses: 678426
+Requests/sec:  22559.18
+Transfer/sec:      5.60MB
+
+2g:
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    29.32ms  111.26ms   1.15s    95.40%
+    Req/Sec    13.64k     7.25k   26.71k    71.17%
+  763689 requests in 30.07s, 189.50MB read
+  Non-2xx or 3xx responses: 763689
+Requests/sec:  25400.30
+Transfer/sec:      6.30MB
+
+4g:
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    43.03ms  138.10ms   1.19s    93.64%
+    Req/Sec    13.58k     6.95k   25.83k    68.84%
+  725116 requests in 30.07s, 179.93MB read
+  Non-2xx or 3xx responses: 725116
+Requests/sec:  24115.16
+Transfer/sec:      5.98MB
+
+CMS GC：
+测试：wrk  -c 40 -d30s http://localhost:8088
+512m:
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    34.46ms  114.27ms   1.16s    94.82%
+    Req/Sec     8.72k     4.83k   16.05k    68.00%
+  481408 requests in 30.03s, 119.46MB read
+  Non-2xx or 3xx responses: 481408
+Requests/sec:  16031.89
+Transfer/sec:      3.98MB
+
+2g:
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    36.21ms  130.47ms   1.30s    95.17%
+    Req/Sec    11.39k     7.17k   25.74k    59.32%
+  635320 requests in 30.06s, 157.65MB read
+  Non-2xx or 3xx responses: 635320
+Requests/sec:  21136.57
+Transfer/sec:      5.24MB
+
+4g:
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    34.98ms  121.33ms   1.24s    94.91%
+    Req/Sec    10.96k     7.06k   26.45k    56.43%
+  613006 requests in 30.03s, 152.11MB read
+  Non-2xx or 3xx responses: 613006
+Requests/sec:  20414.73
+Transfer/sec:      5.07MB
+
+
+G1 GC：
+测试：wrk  -c 40 -d30s http://localhost:8088
+512m:
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    38.50ms  138.23ms   1.38s    95.15%
+    Req/Sec    10.68k     6.41k   21.74k    61.61%
+  582989 requests in 30.02s, 144.66MB read
+  Non-2xx or 3xx responses: 582989
+Requests/sec:  19417.59
+Transfer/sec:      4.82MB
+
+2g:
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    48.69ms  179.81ms   1.63s    95.60%
+    Req/Sec    11.80k     7.27k   22.96k    60.45%
+  630439 requests in 30.02s, 156.44MB read
+  Non-2xx or 3xx responses: 630439
+Requests/sec:  21001.45
+Transfer/sec:      5.21MB
+
+4g:
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    39.50ms  139.88ms   1.35s    94.79%
+    Req/Sec    10.33k     6.08k   21.65k    59.31%
+  564958 requests in 30.06s, 140.19MB read
+  Non-2xx or 3xx responses: 564958
+Requests/sec:  18791.34
+Transfer/sec:      4.66MB

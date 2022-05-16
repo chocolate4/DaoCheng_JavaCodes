@@ -1,0 +1,13 @@
+JAVA_OPTS=-Xmx200g -Xms200g -XX:+UnlockExperimentalVMOptions -XX:+UseZGC -XX:ZCollectionInterval=30 -XX:ZAllocationSpikeTolerance=5 -XX:ReservedCodeCacheSize=2g -XX:InitialCodeCacheSize=2g -XX:ConcGCThreads=8 -XX:ParallelGCThreads=16
+最大最小堆内存设置为200g  使用ZGC ZGC发生的最小时间间隔为30秒  ZGC触发自适应算法的修正系数为5，越大触发越早  CodeCache保留空间的大小为2g  CodeCache初始大小为2g  并发回收垃圾的线程为8（默认是机器的12.5%） STW阶段使用线程数16 (默认是机器的60%)
+系统容量较大，堆内存很大，且需要低延迟
+
+
+JAVA_OPTS=-Xmx4g -Xms4g -XX:+UseG1GC -XX:MaxGCPauseMillis=50
+最大最小堆内存设置为4g  使用G1 GC  最大暂停时间为50ms
+堆内存较大，延迟不敏感，平均GC时间可控
+
+这里分析单节点flume启动脚本
+nohup ./bin/flume-ng agent -Xmx2048m -c ./conf -f ./conf/flume_export.conf -n a1 -Dflume.monitoring.type=http -Dflume.monitoring.port=34545 -Dflume.root.logger=INFO,console &
+1.最大堆内存设置为2g，没有设置最小堆内存，传输速率不稳。
+2.使用 jmap -heap pid 命令发现 使用的是Parallel GC，因为系统考虑的是吞吐量优先，对延迟不敏感
