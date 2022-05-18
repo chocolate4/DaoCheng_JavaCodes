@@ -1,4 +1,4 @@
-package com.daocheng.week03.netty;
+package com.daocheng.week03.work01And02.netty;
 
 import io.netty.buffer.Unpooled;
 import io.netty.channel.ChannelFutureListener;
@@ -10,7 +10,6 @@ import static io.netty.handler.codec.http.HttpHeaderNames.CONNECTION;
 import static io.netty.handler.codec.http.HttpHeaderNames.KEEP_ALIVE;
 
 import java.io.UnsupportedEncodingException;
-import java.nio.charset.StandardCharsets;
 
 /**
  * 自定义InboundHandler 向应用程序写入数据

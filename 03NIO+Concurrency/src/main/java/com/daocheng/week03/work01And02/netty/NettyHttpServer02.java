@@ -1,4 +1,5 @@
-package com.daocheng.week03.netty;
+package com.daocheng.week03.work01And02.netty;
+
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.buffer.PooledByteBufAllocator;
@@ -11,9 +12,9 @@ import io.netty.handler.logging.LogLevel;
 import io.netty.handler.logging.LoggingHandler;
 
 /**
- * netty Server
+ * 使用 Netty 实现后端 HTTP 访问
  */
-public class NettyHttpServer {
+public class NettyHttpServer02 {
     public static void main(String[] args) {
         int port = 8808; //绑定端口号
 
@@ -33,7 +34,7 @@ public class NettyHttpServer {
                     .childOption(ChannelOption.ALLOCATOR, PooledByteBufAllocator.DEFAULT);
             b.group(bossGroup,workerGroup).channel(NioServerSocketChannel.class)
                     .handler(new LoggingHandler(LogLevel.INFO))
-                    .childHandler(new HttpInitializer()); //自定义handler
+                    .childHandler(new HttpInitializer02()); //自定义handler
             Channel ch = b.bind(port).sync().channel(); //绑定端口，开启channel
             System.out.println("开启netty http服务器，监听地址和端口为 http://localhost:" + port + '/');
             ch.closeFuture().sync();
