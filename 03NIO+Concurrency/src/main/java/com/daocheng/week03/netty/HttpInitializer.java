@@ -6,6 +6,9 @@ import io.netty.handler.codec.http.HttpObjectAggregator;
 import io.netty.handler.codec.http.HttpServerCodec;
 import io.netty.channel.socket.SocketChannel;
 
+/**
+ * channel初始化，用于绑定自定义handler
+ */
 public class HttpInitializer extends ChannelInitializer<SocketChannel> {
     @Override
     protected void initChannel(SocketChannel ch) throws Exception {

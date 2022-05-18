@@ -10,15 +10,18 @@ import io.netty.channel.socket.nio.NioServerSocketChannel;
 import io.netty.handler.logging.LogLevel;
 import io.netty.handler.logging.LoggingHandler;
 
+/**
+ * netty Server
+ */
 public class NettyHttpServer {
     public static void main(String[] args) {
-        int port = 8808;
+        int port = 8808; //绑定端口号
 
-        NioEventLoopGroup bossGroup = new NioEventLoopGroup(2);
-        NioEventLoopGroup workerGroup = new NioEventLoopGroup(16);
+        NioEventLoopGroup bossGroup = new NioEventLoopGroup(2); //mainReactor  (socket连接及状态维护)
+        NioEventLoopGroup workerGroup = new NioEventLoopGroup(16); //subReactor  (事件分发处理，去内核读数据)
 
         try{
-            ServerBootstrap b = new ServerBootstrap(); //入口
+            ServerBootstrap b = new ServerBootstrap(); //启动线程 开启socket
             b.option(ChannelOption.SO_BACKLOG,128)
                     .childOption(ChannelOption.TCP_NODELAY,true)
                     .childOption(ChannelOption.SO_KEEPALIVE,true)

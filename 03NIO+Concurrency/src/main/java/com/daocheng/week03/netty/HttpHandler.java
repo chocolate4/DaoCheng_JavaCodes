@@ -13,7 +13,7 @@ import java.io.UnsupportedEncodingException;
 import java.nio.charset.StandardCharsets;
 
 /**
- * 自定义InboundHandler
+ * 自定义InboundHandler 向应用程序写入数据
  */
 public class HttpHandler extends ChannelInboundHandlerAdapter {
     @Override
