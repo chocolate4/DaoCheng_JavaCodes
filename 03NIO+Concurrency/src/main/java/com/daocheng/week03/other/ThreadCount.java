@@ -1,0 +1,14 @@
+package com.daocheng.week03.other;
+
+/**
+ * 线程信息
+ */
+public class ThreadCount {
+    public static void main(String[] args) throws InterruptedException {
+        //System.out.println("system："+Thread.currentThread().getThreadGroup().getParent());
+        Thread.currentThread().getThreadGroup().getParent().list();
+
+//        System.out.println("main："+Thread.currentThread().getThreadGroup());
+//        Thread.currentThread().getThreadGroup().list();
+    }
+}
