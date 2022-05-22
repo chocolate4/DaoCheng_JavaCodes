@@ -1,4 +1,4 @@
-package com.daocheng.week03.work01And02.netty;
+package com.daocheng.week03.work01And02.netty01;
 
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelPipeline;
