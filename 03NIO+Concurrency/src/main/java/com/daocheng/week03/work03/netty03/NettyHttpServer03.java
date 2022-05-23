@@ -12,7 +12,7 @@ import io.netty.handler.logging.LogLevel;
 import io.netty.handler.logging.LoggingHandler;
 
 /**
- * 使用 Netty 实现后端 HTTP 访问
+ * 使用 Netty 实现后端 HTTP 访问 添加filter
  */
 public class NettyHttpServer03 {
     public static void main(String[] args) {
