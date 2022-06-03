@@ -1,10 +1,9 @@
-package com.daocheng.work.Pojo;
+package com.daocheng.work.pojo;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
-import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.BeanNameAware;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;

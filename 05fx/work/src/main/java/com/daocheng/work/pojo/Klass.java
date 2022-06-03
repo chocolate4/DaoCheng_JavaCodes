@@ -1,4 +1,4 @@
-package com.daocheng.work.Pojo;
+package com.daocheng.work.pojo;
 
 import lombok.Data;
 
