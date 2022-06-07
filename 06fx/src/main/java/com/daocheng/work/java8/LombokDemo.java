@@ -1,0 +1,26 @@
+package com.daocheng.work.java8;
+
+import lombok.extern.java.Log;
+
+import java.io.IOException;
+
+@Log
+public class LombokDemo {
+    public static void main(String[] args) throws IOException {
+
+        // Spring IoC
+        // ServiceLoader.load  SPI
+        // Listener/Callback
+        // EventBus
+
+        A a = new A(1, "KK");
+        System.out.println(a.toString());
+        A b = A.builder().age(1).name("KKK").build();
+
+        new LombokDemo().demo();
+    }
+
+    private void demo() {
+        log.info("demo in log.");
+    }
+}
