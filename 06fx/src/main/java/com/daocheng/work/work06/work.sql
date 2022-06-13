@@ -5,7 +5,8 @@ CREATE TABLE `order` (
   `price` double,
   `user_id` varchar(100),
   `order_create_time` varchar(100),
-  `order_settlement_time` varchar(100)
+  `order_settlement_time` varchar(100),
+  `is_delete` int
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
 ;
 
@@ -23,7 +24,8 @@ CREATE TABLE `user` (
   `city` varchar(100),
   `area` varchar(100),
   `street` varchar(100),
-  `zip` varchar(100)
+  `zip` varchar(100),
+  `is_delete` int
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
 ;
 
@@ -33,6 +35,7 @@ CREATE TABLE `product` (
   `product_name` varchar(100) ,
   `product_price` double,
   `barcode` varchar(100),
-  `number` int
+  `number` int,
+  `is_delete` int
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
 ;
