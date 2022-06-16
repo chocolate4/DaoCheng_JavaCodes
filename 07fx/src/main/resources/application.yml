@@ -2,9 +2,9 @@ spring:
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
     dirver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/order?serverTimezone=GMT%2B8&characterEncoding=utf-8&useSSL=false
+    url: jdbc:mysql://rm-bp1f60sm3gkeh40uhqo.mysql.rds.aliyuncs.com:3306/order?serverTimezone=GMT%2B8&characterEncoding=utf-8&useSSL=false
     username: root
-    password: gwq806186987
+    password: gwq_806186987
 
 mybatis-plus:
   configuration:
