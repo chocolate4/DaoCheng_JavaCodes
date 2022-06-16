@@ -33,11 +33,11 @@ public class MyBatisPlusTest {
         long count = orderService.count();
         System.out.println("t_order:" + count);
 
-        long count1 = userService.count();
-        System.out.println("t_user" + count1);
-
-        long count2 = productService.count();
-        System.out.println("t_product" + count2);
+//        long count1 = userService.count();
+//        System.out.println("t_user" + count1);
+//
+//        long count2 = productService.count();
+//        System.out.println("t_product" + count2);
     }
 
     @Test
