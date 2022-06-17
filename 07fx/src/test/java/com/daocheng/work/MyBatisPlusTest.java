@@ -8,6 +8,7 @@ import com.daocheng.work.service.impl.UserServiceImpl;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.context.annotation.Profile;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -43,7 +44,7 @@ public class MyBatisPlusTest {
     @Test
     public void insertOrder() throws ParseException {
         Order order = new Order();
-        order.setOrderId(1000000000L);
+        order.setOrderId(1000100000L);
         order.setUserId(100000L);
         order.setOrderStatus("已下单");
         order.setProductCount(1);

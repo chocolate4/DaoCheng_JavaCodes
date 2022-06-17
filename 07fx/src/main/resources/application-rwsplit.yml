@@ -1,0 +1,45 @@
+spring:
+  shardingsphere:
+    datasource:
+      names: record1,record2
+      record1:
+        type: com.zaxxer.hikari.HikariDataSource
+        dirver-class-name: com.mysql.cj.jdbc.Driver
+        url: jdbc:mysql://rm-bp1f60sm3gkeh40uhqo.mysql.rds.aliyuncs.com:3306/order?serverTimezone=GMT%2B8&characterEncoding=utf-8&useSSL=false
+        username: root
+        password: gwq_806186987
+      record2:
+        type: com.zaxxer.hikari.HikariDataSource
+        dirver-class-name: com.mysql.cj.jdbc.Driver
+        url: jdbc:mysql://rm-bp1f60sm3gkeh40uhqo.mysql.rds.aliyuncs.com:3306/order2?serverTimezone=GMT%2B8&characterEncoding=utf-8&useSSL=false
+        username: root
+        password: gwq_806186987
+    rules:
+      readwrite-splitting: # 读写分离规则
+        data-sources: # 数据源配置
+          random: # 这个名字随便起
+            type: Static                               # 静态类型
+            load-balancer-name: round_robin            # 负载均衡算法名字
+            props:
+              write-data-source-name: record1           # 写数据源
+              read-data-source-names: record2            # 读数据源
+        load-balancers: # 负载均衡配置
+          round_robin: # 跟上面负载均衡算法的名字对应
+            type: ROUND_ROBIN
+    props:
+      sql:
+        show: true
+
+
+
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  #    设置mybatis-plus的全剧配置
+  global-config:
+    db-config:
+      id-type: auto
+      logic-delete-field: deleted
+      logic-delete-value: 1
+      logic-not-delete-value: 0
