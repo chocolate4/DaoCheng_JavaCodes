@@ -28,7 +28,7 @@ spring:
           table-strategy:
             inline:
               sharding-column: order_id
-              algorithm-expression: t_order$->{order_id % 2}
+              algorithm-expression: t_order$->{order_id$ % 2}
 
 #mybatis-plus:
 #  type-aliases-package: com.daocheng.work.pojo
