@@ -24,8 +24,8 @@ public class TestSharding {
     @Test
     void test() throws ParseException {
         Order order = new Order();
-        order.setOrderId(3300000003L);
-        order.setUserId(330004L);
+        order.setOrderId(3300000009L);
+        order.setUserId(330005L);
         order.setOrderStatus("已下单");
         order.setProductCount(1);
         order.setPrice(100.0);
@@ -35,7 +35,8 @@ public class TestSharding {
         Date createTime = simpleDateFormat1.parse("2022-06-15 00:00:00");
         order.setCreateTime(createTime);
         order.setUpdateTime(createTime);
-        service.save(order);
+        orderMapper.insert(order);
+//        service.save(order);
 //        List<Order> orders = orderMapper.selectList(null);
 //        System.out.println(orders.size());
 //        service.removeById(3300000000L);

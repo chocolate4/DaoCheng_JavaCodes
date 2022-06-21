@@ -20,15 +20,18 @@ spring:
     sharding:
       tables:
         t_order:
-          actual-data-nodes: ds$->{0..1}.t_order$->{1..2}
+          actualDataNodes: ds1.t_order$->{1..2}
+          key-generator:
+            column: order_id
+            type: SNOWFLAKE
           database-strategy:
             inline:
               sharding-column: user_id
-              algorithm-expression: ds$->{user_id$ % 2}
-          table-strategy:
+              algorithm-expression: ds${user_id%2}
+          tableStrategy:
             inline:
-              sharding-column: order_id
-              algorithm-expression: t_order$->{order_id$ % 2}
+              shardingColumn: order_id
+              algorithmExpression: t_order$->{order_id$ % 2}
 
 #mybatis-plus:
 #  type-aliases-package: com.daocheng.work.pojo

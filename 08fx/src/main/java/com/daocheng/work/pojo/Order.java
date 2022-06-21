@@ -1,9 +1,12 @@
 package com.daocheng.work.pojo;
 
+import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
+import org.apache.shardingsphere.transaction.annotation.ShardingTransactionType;
 
 import java.util.Date;
 
+@TableName("t_order")
 @Data
 public class Order {
 
