@@ -24,8 +24,8 @@ public class TestSharding {
     @Test
     void test() throws ParseException {
         Order order = new Order();
-        order.setOrderId(3300000009L);
-        order.setUserId(330005L);
+        order.setOrderId(33000000010L);
+        order.setUserId(330006L);
         order.setOrderStatus("已下单");
         order.setProductCount(1);
         order.setPrice(100.0);
