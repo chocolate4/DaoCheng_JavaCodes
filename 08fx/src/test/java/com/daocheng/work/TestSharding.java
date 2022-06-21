@@ -10,6 +10,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 
 @SpringBootTest
 public class TestSharding {
@@ -24,7 +25,7 @@ public class TestSharding {
     void test() throws ParseException {
         Order order = new Order();
         order.setOrderId(3300000000L);
-        order.setUserId(330000L);
+        order.setUserId(330001L);
         order.setOrderStatus("已下单");
         order.setProductCount(1);
         order.setPrice(100.0);
@@ -35,8 +36,9 @@ public class TestSharding {
         order.setCreateTime(createTime);
         order.setUpdateTime(createTime);
         service.save(order);
-        orderMapper.selectList(null);
-        service.removeById(3300000000L);
-        service.updateById(order);
+//        List<Order> orders = orderMapper.selectList(null);
+//        System.out.println(orders.size());
+//        service.removeById(3300000000L);
+//        service.updateById(order);
     }
 }

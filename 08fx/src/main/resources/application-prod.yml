@@ -8,19 +8,19 @@ spring:
       ds0:
         type: com.zaxxer.hikari.HikariDataSource
         dirver-class-name: com.mysql.cj.jdbc.Driver
-        url: jdbc:mysql://rm-bp1f60sm3gkeh40uhqo.mysql.rds.aliyuncs.com:3306/t_order1?serverTimezone=GMT%2B8&characterEncoding=utf-8&useSSL=false
+        jdbc-url: jdbc:mysql://rm-bp1f60sm3gkeh40uhqo.mysql.rds.aliyuncs.com:3306/t_order1?serverTimezone=GMT%2B8&characterEncoding=utf-8&useSSL=false
         username: root
         password: gwq_806186987
       ds1:
         type: com.zaxxer.hikari.HikariDataSource
         dirver-class-name: com.mysql.cj.jdbc.Driver
-        url: jdbc:mysql://rm-bp1f60sm3gkeh40uhqo.mysql.rds.aliyuncs.com:3306/t_order2?serverTimezone=GMT%2B8&characterEncoding=utf-8&useSSL=false
+        jdbc-url: jdbc:mysql://rm-bp1f60sm3gkeh40uhqo.mysql.rds.aliyuncs.com:3306/t_order2?serverTimezone=GMT%2B8&characterEncoding=utf-8&useSSL=false
         username: root
         password: gwq_806186987
     sharding:
       tables:
         t_order:
-          actual-data-nodes: ds$->{0..1}.t_order->{1..2}
+          actual-data-nodes: ds$->{0..1}.t_order$->{1..2}
           database-strategy:
             inline:
               sharding-column: user_id
@@ -28,7 +28,7 @@ spring:
           table-strategy:
             inline:
               sharding-column: order_id
-              algorithm-expression: t_order$->{order_id % 16}
+              algorithm-expression: t_order$->{order_id % 2}
 
-mybatis-plus:
-  type-aliases-package: com.daocheng.work.pojo
+#mybatis-plus:
+#  type-aliases-package: com.daocheng.work.pojo
