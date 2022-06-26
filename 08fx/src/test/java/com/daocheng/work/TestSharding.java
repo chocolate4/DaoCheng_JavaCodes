@@ -3,9 +3,12 @@ package com.daocheng.work;
 import com.daocheng.work.mapper.OrderMapper;
 import com.daocheng.work.pojo.Order;
 import com.daocheng.work.services.impl.OrderServiceImpl;
+import org.apache.shardingsphere.transaction.annotation.ShardingTransactionType;
+import org.apache.shardingsphere.transaction.core.TransactionType;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -23,6 +26,8 @@ public class TestSharding {
     OrderMapper orderMapper;
 
     @Test
+    @Transactional
+    @ShardingTransactionType(TransactionType.XA) //TransactionType.LOCAL, TransactionType.XA, TransactionType.BASE
     void test() throws ParseException {
         final LinkedList<Order> orders = new LinkedList<>();
         for(int j = 1; j < 100; j++) {
